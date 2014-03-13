@@ -1,19 +1,20 @@
 #include <iostream>
 #include <cstdlib>
-#include <iostream>
 #include <string>
 #include <map>
 #include "kevin.h"
-
+/*----------------------------------------------------------------------------*/
 using namespace std;
 
 map<string, int> hashtable;
 
+/*----------------------------------------------------------------------------*/
 void add2hash(string str, int i) {
     if (hashtable[str]) hashtable[str] += i;
     else hashtable[str] = i;
 }
 
+/*----------------------------------------------------------------------------*/
 int main(int argc, char**argv) {
 
 
@@ -42,7 +43,6 @@ int main(int argc, char**argv) {
         cout << (*ii).first << ": " << (*ii).second << endl;
     }
 
-    //-----------
-
     return 0;
 }
+/*----------------------------------------------------------------------------*/
