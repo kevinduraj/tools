@@ -20,7 +20,7 @@ int main(int argc, char**argv) {
 
     std::cout << "Welcome to Matrix..." << std::endl;
 
-    //------ display arguments ----//
+    //------ Display Arguments ----//
     if (argc > 1) {
         std::cout << std::endl << "Arguments:" << std::endl;
         for (int i = 1; i < argc; i++) {
@@ -30,18 +30,7 @@ int main(int argc, char**argv) {
 
     kevin * kev = new kevin();
     kev->hello();
-
-    //-----------
-    add2hash("kevin", 1);
-    add2hash("thomas", 1);
-    add2hash("duraj", 1);
-    add2hash("kevin", 100);
-
-    cout << "Map size: " << hashtable.size() << endl;
-
-    for (map<string, int>::iterator ii = hashtable.begin(); ii != hashtable.end(); ++ii) {
-        cout << (*ii).first << ": " << (*ii).second << endl;
-    }
+    kev->addValues();
 
     return 0;
 }
