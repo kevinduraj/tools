@@ -11,7 +11,7 @@ using namespace std;
 class KeyValue {
     
 public:
-    map<string, int> hashtable;
+    map<string, int> mapTable;
     
     KeyValue();
     virtual ~KeyValue();

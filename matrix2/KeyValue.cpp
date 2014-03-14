@@ -1,5 +1,6 @@
 #include <iostream>
 #include "KeyValue.h"
+
 /*----------------------------------------------------------------------------*/
 using namespace std;
 
@@ -22,8 +23,8 @@ void KeyValue::hello() {
 /*----------------------------------------------------------------------------*/
 void KeyValue::add2map(string str, int i) {
 
-    if (hashtable[str]) hashtable[str] += i;
-    else hashtable[str] = i;
+    if (mapTable[str]) mapTable[str] += i;
+    else mapTable[str] = i;
 
 }
 
@@ -40,9 +41,9 @@ void KeyValue::addValues() {
 /*----------------------------------------------------------------------------*/
 void KeyValue::display() {
     
-    cout << "Map size: " << hashtable.size() << endl;
+    cout << "Map size: " << mapTable.size() << endl;
 
-    for (map<string, int>::iterator ii = hashtable.begin(); ii != hashtable.end(); ++ii) {
+    for (map<string, int>::iterator ii = mapTable.begin(); ii != mapTable.end(); ++ii) {
         cout << (*ii).first << ": " << (*ii).second << endl;
     }
 }

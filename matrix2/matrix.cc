@@ -6,9 +6,16 @@
 /*----------------------------------------------------------------------------*/
 using namespace std;
 
-map<string, int> hashtable;
-
-
+/*----------------------------------------------------------------------------*/
+void test_map() {
+        
+    KeyValue * kv = new KeyValue();
+    kv->hello();
+    kv->addValues();    
+    kv->display();
+    delete kv;    
+    
+}
 /*----------------------------------------------------------------------------*/
 int main(int argc, char**argv) {
 
@@ -18,17 +25,8 @@ int main(int argc, char**argv) {
             std::cout << i << ": " << argv[i] << std::endl;
         }
     }
-
-    cout << "----------------------------" << endl;
+    test_map();
     
-    KeyValue * kev = new KeyValue();
-    kev->hello();
-    kev->addValues();
-    cout << "----------------------------" << endl;
-    
-    kev->display();
-    delete kev;
-
     return 0;
 }
 /*----------------------------------------------------------------------------*/
